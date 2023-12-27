@@ -3,7 +3,6 @@ import 'flatpickr/dist/flatpickr.min.css';
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import { onStartClick } from './helpers';
 
 const startBtn = document.querySelector('.btn');
 
