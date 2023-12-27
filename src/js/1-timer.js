@@ -33,7 +33,7 @@ const errorToastConfig = {
   backgroundColor: '#EF4040',
   titleColor: '#ffffff',
   messageColor: '#ffffff',
-  iconUrl: '../img/icon-error.svg',
+  iconUrl: './img/icon-error.svg',
 };
 
 function onStartClick() {
