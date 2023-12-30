@@ -3,6 +3,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import { updateTime } from './helpers';
 
 const startBtn = document.querySelector('.btn');
 
@@ -33,9 +34,9 @@ const errorToastConfig = {
   backgroundColor: '#EF4040',
   titleColor: '#ffffff',
   messageColor: '#ffffff',
-  iconUrl: '../src/img/icon-error.svg',
+  iconUrl: '../img/icon-error.svg',
 };
 
 function onStartClick() {
-  const interval = setInterval(updateTime, 1000);
+  const interval = setInterval(() => updateTime(selectedDate), 1000);
 }

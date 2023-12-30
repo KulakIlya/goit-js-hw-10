@@ -5,7 +5,7 @@ const timerValues = {
   seconds: document.querySelector('.value[data-seconds]'),
 };
 
-export function updateTime() {
+export function updateTime(selectedDate) {
   const { days, hours, minutes, seconds } = convertMs(
     selectedDate - Date.now()
   );
