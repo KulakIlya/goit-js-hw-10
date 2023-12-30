@@ -1,6 +1,9 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import iconError from '../img/icon-error.svg';
+import iconSuccess from '../img/icon-success.svg';
+
 const baseIziToastConfig = {
   position: 'topRight',
   maxWidth: '383px',
@@ -20,7 +23,7 @@ function promiseGenerator(isFulfilled, delay) {
           title: 'OK',
           message: `Fulfilled promise in ${delay}ms`,
           backgroundColor: '#59A10D',
-          iconUrl: '../img/icon-success.svg',
+          iconUrl: iconSuccess,
         });
 
       iziToast.error({
@@ -28,7 +31,7 @@ function promiseGenerator(isFulfilled, delay) {
         title: 'Error',
         message: `Rejected promise in ${delay}ms`,
         backgroundColor: '#EF4040',
-        iconUrl: '../img/icon-error.svg',
+        iconUrl: iconError,
       });
     }, delay);
   });

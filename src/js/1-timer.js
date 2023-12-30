@@ -4,8 +4,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-import img from '../img/icon-error.svg';
-console.log(img);
+import iconError from '../img/icon-error.svg';
 
 import { updateTime } from './helpers';
 
@@ -38,7 +37,7 @@ const errorToastConfig = {
   backgroundColor: '#EF4040',
   titleColor: '#ffffff',
   messageColor: '#ffffff',
-  iconUrl: img,
+  iconUrl: iconError,
 };
 
 function onStartClick() {
