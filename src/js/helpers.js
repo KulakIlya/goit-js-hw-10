@@ -1,21 +1,3 @@
-const timerValues = {
-  days: document.querySelector('.value[data-days]'),
-  hours: document.querySelector('.value[data-hours]'),
-  minutes: document.querySelector('.value[data-minutes]'),
-  seconds: document.querySelector('.value[data-seconds]'),
-};
-
-export function updateTime(selectedDate) {
-  const { days, hours, minutes, seconds } = convertMs(
-    selectedDate - Date.now()
-  );
-
-  timerValues.days.textContent = days;
-  timerValues.hours.textContent = hours;
-  timerValues.minutes.textContent = minutes;
-  timerValues.seconds.textContent = seconds;
-}
-
 export function convertMs(ms) {
   // Number of milliseconds per unit of time
   const second = 1000;
